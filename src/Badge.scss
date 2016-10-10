@@ -1,0 +1,42 @@
+@import "../node_modules/tinper-bee-core/scss/minxin-variables.scss";
+
+.u-badge {
+    position : relative;
+    white-space: nowrap;
+	font-weight: 600;
+	font-size: $badge-font-size;
+	min-width: ($badge-size/2);
+	padding: 3px 7px;
+	border-radius : ($badge-size/2);
+	background: $badge-background;
+	color: $badge-color;
+	box-sizing: border-box;
+}
+
+
+
+.u-badge-primary.u-badge{
+  @include badge-variant($badge-primary-color, $badge-primary-bg);
+}
+
+ .u-badge-success.u-badge {
+   @include badge-variant($badge-success-color, $badge-success-bg);
+}
+
+
+.u-badge-info.u-badge{
+  @include badge-variant($badge-info-color, $badge-info-bg);
+}
+
+.u-badge-warning.u-badge{
+ @include badge-variant($badge-warning-color, $badge-warning-bg);
+}
+
+.u-badge-danger.u-badge {
+ @include badge-variant($badge-danger-color, $badge-danger-bg);
+}
+
+.u-badge-dark.u-badge {
+  @include  badge-variant($badge-dark-color, $badge-dark-bg);
+}
+
