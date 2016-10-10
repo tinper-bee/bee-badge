@@ -17,7 +17,13 @@ $ npm run dev
 
 ## Usage
 
-```js
+```
+import Badge from 'bee-badge';
+React.render(<div>
+    <div>
+        <Badge color="primary">a</Badge>
+    </div>
+</div>, document.getElementById('target'));
 
 ```
 
@@ -26,3 +32,6 @@ $ npm run dev
 ## API
 |参数|说明|类型|默认值|
 |---|----|---|------|
+|color|类型(`primary` `success`)|string|''|
+|className|增加额外的class|string|''|
+
