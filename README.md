@@ -15,7 +15,7 @@ $ npm install
 $ npm run dev
 ```
 
-## Usage
+## 使用
 
 ```
 import Badge from 'bee-badge';
