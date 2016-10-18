@@ -4,9 +4,9 @@
 [![devDependency Status](https://img.shields.io/david/dev/tinper-bee/bee-badge.svg)](https://david-dm.org/tinper-bee/bee-badge#info=devDependencies)
 
 
-react bee-badge component for tinper-bee
+用来醒目的展示新的或未读的信息条目
 
-#### setup develop environment
+#### 安装步骤
 
 ```sh
 $ git clone https://github.com/tinper-bee/bee-badge
