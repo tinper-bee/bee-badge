@@ -1,6 +1,5 @@
-import { Badge } from '../src';
+import  Badge from '../src';
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom';
 
 class Demo extends Component {
 	constructor(props) {
