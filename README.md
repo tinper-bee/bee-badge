@@ -4,9 +4,9 @@
 [![devDependency Status](https://img.shields.io/david/dev/tinper-bee/bee-badge.svg)](https://david-dm.org/tinper-bee/bee-badge#info=devDependencies)
 
 
-react bee-badge component for tinper-bee
+用来醒目的展示新的或未读的信息条目
 
-#### setup develop environment
+#### 安装步骤
 
 ```sh
 $ git clone https://github.com/tinper-bee/bee-badge
@@ -15,7 +15,7 @@ $ npm install
 $ npm run dev
 ```
 
-## Usage
+## 使用
 
 ```
 import Badge from 'bee-badge';
@@ -32,6 +32,6 @@ React.render(<div>
 ## API
 |参数|说明|类型|默认值|
 |---|----|---|------|
-|color|类型(`primary` `success`)|string|''|
+|color|one of: `primary` `success` `info` `error`  `warning` `dark`|string|''|
 |className|增加额外的class|string|''|
 
