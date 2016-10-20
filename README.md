@@ -44,7 +44,7 @@ React.render(<div>
 import "./node_modules/src/Badge.scss"
 //或是
 import "./node_modules/build/bee-badge.css"
-
+```
 
 
 ## API
