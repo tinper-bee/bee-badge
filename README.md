@@ -21,11 +21,11 @@ $ npm run dev
 先进行下载bee-badge包
 
 ```
-npm install --save bee-form-group
+npm install --save bee-badge
 ```
 组件调用
 ```js
-import FormGroup from 'bee-form-control';
+import Badge from 'bee-badge';
 
 React.render(<div>
     <div>
