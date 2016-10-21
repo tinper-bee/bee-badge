@@ -13,4 +13,4 @@ env:
 before_install:
   - npm install - g bee-tools
 
-script:  npm test
+script: npm test
