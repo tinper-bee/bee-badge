@@ -1,6 +1,6 @@
 # bee-badge 
 [![npm version](https://img.shields.io/npm/v/bee-badge.svg)](https://www.npmjs.com/package/bee-badge)
-[![Build Status](https://img.shields.io/travis/tinper-bee/generator-tinper-bee/master.svg)](https://travis-ci.org/tinper-bee/bee-badge)
+[![Build Status](https://img.shields.io/travis/tinper-bee/bee-badge/master.svg)](https://travis-ci.org/tinper-bee/bee-badge)
 [![devDependency Status](https://img.shields.io/david/dev/tinper-bee/bee-badge.svg)](https://david-dm.org/tinper-bee/bee-badge#info=devDependencies)
 
 
