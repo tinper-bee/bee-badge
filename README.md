@@ -2,7 +2,6 @@
 [![npm version](https://img.shields.io/npm/v/bee-badge.svg)](https://www.npmjs.com/package/bee-badge)
 [![Build Status](https://img.shields.io/travis/tinper-bee/bee-badge/master.svg)](https://travis-ci.org/tinper-bee/bee-badge)
 [![Coverage Status](https://coveralls.io/repos/github/tinper-bee/bee-badge/badge.svg?branch=master)](https://coveralls.io/github/tinper-bee/bee-badge?branch=master)
-[![devDependency Status](https://img.shields.io/david/dev/tinper-bee/bee-badge.svg)](https://david-dm.org/tinper-bee/bee-badge#info=devDependencies)
 
 
 用来醒目的展示新的或未读的信息条目
