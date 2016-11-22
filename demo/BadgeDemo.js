@@ -11,6 +11,9 @@ class Demo extends Component {
 			<div>
 				<div className="u-col-md-12">
 					<h2>不同背景的徽章</h2>
+					<div className="margin-right-20 inline" clsPrefix = "ahua">
+						<Badge colors="primary">a</Badge>
+					</div>
 					<div className="margin-right-20 inline">
 						<Badge colors="primary">a</Badge>
 					</div>

@@ -27,13 +27,12 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
 
 /**
- * @title badge 默认显示内容1
+ *  badge 默认显示内容1
  */
 var defaultProps = {
-	children: "1"
+	children: "1",
+	clsPrefix: 'u-badge'
 };
-
-var clsPrefix = 'u-badge';
 
 var Badge = function (_React$Component) {
 	_inherits(Badge, _React$Component);
@@ -49,15 +48,16 @@ var Badge = function (_React$Component) {
 		var colors = _props.colors;
 		var className = _props.className;
 		var children = _props.children;
+		var clsPrefix = _props.clsPrefix;
 
-		var others = _objectWithoutProperties(_props, ['colors', 'className', 'children']);
+		var others = _objectWithoutProperties(_props, ['colors', 'className', 'children', 'clsPrefix']);
 
 		var clsObj = {};
 		if (className) {
 			clsObj[className] = true;
 		}
 		/**
-   * @title 以u-badge起头的颜色类判断
+   *  以u-badge起头的颜色类判断
    */
 		if (colors) {
 			clsObj[clsPrefix + '-' + colors] = true;
@@ -78,18 +78,4 @@ var Badge = function (_React$Component) {
 Badge.defaultProps = defaultProps;
 
 exports["default"] = Badge;
-module.exports = exports['default'];
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _Badge = require('./Badge');
-
-var _Badge2 = _interopRequireDefault(_Badge);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-exports["default"] = _Badge2["default"];
 module.exports = exports['default'];

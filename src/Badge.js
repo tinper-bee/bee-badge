@@ -2,26 +2,26 @@ import React, { PropTypes } from 'react';
 import classnames from 'classnames';
 
 /**
- * @title badge 默认显示内容1
+ *  badge 默认显示内容1
  */
 const defaultProps = {
-	children: "1"
+	children: "1",
+	clsPrefix: 'u-badge'
 };
 
-const clsPrefix = 'u-badge';
 
 class Badge extends React.Component {
 	constructor(props){
 		super(props);
 	}
 	render(){
-		let {colors,className,children, ...others} = this.props;
+		let {colors,className,children,clsPrefix, ...others} = this.props;
 		let clsObj = {};
 		if(className){
 			clsObj[className] = true;
 		}
 		/**
-		 * @title 以u-badge起头的颜色类判断
+		 *  以u-badge起头的颜色类判断
 		 */
 		if(colors){
 			clsObj[`${clsPrefix}-${colors}`] = true;
