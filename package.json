@@ -37,7 +37,7 @@
     "bee-input-group-addon": "0.0.5",
     "bee-input-group-button": "0.0.5",
     "classnames": "^2.2.5",
-    "tinper-bee-core": "0.0.6"
+    "tinper-bee-core": "latest"
   },
   "devDependencies": {
     "chai": "^3.5.0",
