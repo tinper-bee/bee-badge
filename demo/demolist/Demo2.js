@@ -6,8 +6,8 @@ class Demo2 extends Component {
 	render(){
 		return (
 			<Badge colors="primary">
-		    	<i className="uf uf-bellmusicaltool"></i>
-		    </Badge>
+				<i className="uf uf-bellmusicaltool"></i>
+			</Badge>
 		)
 	}
 }
