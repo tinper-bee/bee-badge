@@ -44,13 +44,12 @@ var Badge = function (_React$Component) {
 	}
 
 	Badge.prototype.render = function render() {
-		var _props = this.props;
-		var colors = _props.colors;
-		var className = _props.className;
-		var children = _props.children;
-		var clsPrefix = _props.clsPrefix;
-
-		var others = _objectWithoutProperties(_props, ['colors', 'className', 'children', 'clsPrefix']);
+		var _props = this.props,
+		    colors = _props.colors,
+		    className = _props.className,
+		    children = _props.children,
+		    clsPrefix = _props.clsPrefix,
+		    others = _objectWithoutProperties(_props, ['colors', 'className', 'children', 'clsPrefix']);
 
 		var clsObj = {};
 		if (className) {
