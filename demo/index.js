@@ -13,13 +13,13 @@ const CARETUP = <i className="uf uf-chevronarrowup"></i>;
 
 
 /**
- * @title 基本样式展示
+ * @title 基本样式Badge
  * @description `colors`控制背景颜色种类。
  */
 class Demo1 extends Component {
 	render () {
 		return (
-			<Badge colors="primary">primary</Badge>
+			<Badge colors="primary">1</Badge>
 		)
 	}
 }/**
@@ -34,7 +34,7 @@ class Demo2 extends Component {
 			</Badge>
 		)
 	}
-}var DemoArray = [{"example":<Demo1 />,"title":" 基本样式展示","code":"/**\n * @title 基本样式展示\n * @description `colors`控制背景颜色种类。\n */\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<Badge colors=\"primary\">primary</Badge>\n\t\t)\n\t}\n}","desc":" `colors`控制背景颜色种类。"},{"example":<Demo2 />,"title":" 图标Badge","code":"/**\n * @title 图标Badge\n * @description 在子元素里自定义内容\n */\nclass Demo2 extends Component {\n\trender(){\n\t\treturn (\n\t\t\t<Badge colors=\"primary\">\n\t\t\t\t<i className=\"uf uf-bellmusicaltool\"></i>\n\t\t\t</Badge>\n\t\t)\n\t}\n}","desc":" 在子元素里自定义内容"}]
+}var DemoArray = [{"example":<Demo1 />,"title":" 基本样式Badge","code":"/**\n * @title 基本样式Badge\n * @description `colors`控制背景颜色种类。\n */\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<Badge colors=\"primary\">1</Badge>\n\t\t)\n\t}\n}","desc":" `colors`控制背景颜色种类。"},{"example":<Demo2 />,"title":" 图标Badge","code":"/**\n * @title 图标Badge\n * @description 在子元素里自定义内容\n */\nclass Demo2 extends Component {\n\trender(){\n\t\treturn (\n\t\t\t<Badge colors=\"primary\">\n\t\t\t\t<i className=\"uf uf-bellmusicaltool\"></i>\n\t\t\t</Badge>\n\t\t)\n\t}\n}","desc":" 在子元素里自定义内容"}]
 
 
 class Demo extends Component {
