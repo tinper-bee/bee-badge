@@ -5,7 +5,7 @@
 class Demo1 extends Component {
 	render () {
 		return (
-			<Badge colors="primary">1</Badge>
+			<Badge colors="primary" dataBadge="1"></Badge>
 		)
 	}
 }

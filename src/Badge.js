@@ -4,8 +4,26 @@ import classnames from 'classnames';
 /**
  *  badge 默认显示内容1
  */
+
+
+const propTypes = {
+  /**
+   * @title 颜色
+   */
+  colors: PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger','default']),
+  /**
+   * @title 边角显示内容
+   */
+  dataBadge: PropTypes.oneOfType([
+  		PropTypes.node,
+  		PropTypes.string,
+  		PropTypes.object
+  ]),
+  dataBadgePlacement: PropTypes.oneOf(['top,bottom'])
+};
+
+
 const defaultProps = {
-	children: "1",
 	clsPrefix: 'u-badge'
 };
 
@@ -15,7 +33,7 @@ class Badge extends React.Component {
 		super(props);
 	}
 	render(){
-		let {colors,className,children,clsPrefix, ...others} = this.props;
+		let {colors,className,children,clsPrefix,dataBadge,dataBadgePlacement, ...others} = this.props;
 		let clsObj = {};
 		if(className){
 			clsObj[className] = true;
@@ -26,11 +44,16 @@ class Badge extends React.Component {
 		if(colors){
 			clsObj[`${clsPrefix}-${colors}`] = true;
 		}
-		
+		if(dataBadge) {
+			clsObj[`data-badge`] = true;
+		}
+		if(dataBadgePlacement) {
+			clsObj[`data-badge-${dataBadgePlacement}`] = true;
+		}
 		let classNames = classnames(clsPrefix,clsObj);
 
 		return(
-			<span className={classNames} {...others}>{children}</span>
+			<span className={classNames} {...others}>{children}<span className="data-icon">{dataBadge}</span></span>
 		);
 	}
 }

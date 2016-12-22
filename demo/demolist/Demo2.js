@@ -5,9 +5,14 @@
 class Demo2 extends Component {
 	render(){
 		return (
-			<Badge colors="primary">
-				<i className="uf uf-bellmusicaltool"></i>
-			</Badge>
+			<div>
+				<Badge colors="warning" dataBadge={4} dataBadgePlacement="bottom">
+					<i className="uf uf-bellmusicaltool"></i>
+				</Badge>
+				<Badge colors="primary" dataBadge={20} dataBadgePlacement="top">
+					<i className="uf uf-bellmusicaltool"></i>
+				</Badge>
+			</div>
 		)
 	}
 }
