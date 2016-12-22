@@ -29,8 +29,20 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 /**
  *  badge 默认显示内容1
  */
+
+var propTypes = {
+	/**
+  * @title 颜色
+  */
+	colors: _react.PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', 'default']),
+	/**
+  * @title 边角显示内容
+  */
+	dataBadge: _react.PropTypes.oneOfType([_react.PropTypes.node, _react.PropTypes.string, _react.PropTypes.object]),
+	dataBadgePlacement: _react.PropTypes.oneOf(['topbottom'])
+};
+
 var defaultProps = {
-	children: "1",
 	clsPrefix: 'u-badge'
 };
 
@@ -49,7 +61,9 @@ var Badge = function (_React$Component) {
 		    className = _props.className,
 		    children = _props.children,
 		    clsPrefix = _props.clsPrefix,
-		    others = _objectWithoutProperties(_props, ['colors', 'className', 'children', 'clsPrefix']);
+		    dataBadge = _props.dataBadge,
+		    dataBadgePlacement = _props.dataBadgePlacement,
+		    others = _objectWithoutProperties(_props, ['colors', 'className', 'children', 'clsPrefix', 'dataBadge', 'dataBadgePlacement']);
 
 		var clsObj = {};
 		if (className) {
@@ -61,13 +75,23 @@ var Badge = function (_React$Component) {
 		if (colors) {
 			clsObj[clsPrefix + '-' + colors] = true;
 		}
-
+		if (dataBadge) {
+			clsObj['data-badge'] = true;
+		}
+		if (dataBadgePlacement) {
+			clsObj['data-badge-' + dataBadgePlacement] = true;
+		}
 		var classNames = (0, _classnames2["default"])(clsPrefix, clsObj);
 
 		return _react2["default"].createElement(
 			'span',
 			_extends({ className: classNames }, others),
-			children
+			children,
+			_react2["default"].createElement(
+				'span',
+				{ className: 'data-icon' },
+				dataBadge
+			)
 		);
 	};
 
