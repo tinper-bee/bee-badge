@@ -6,12 +6,12 @@ class Demo2 extends Component {
 	render(){
 		return (
 			<div>
-				<Badge colors="warning" dataBadge={4} dataBadgePlacement="bottom">
-					<i className="uf uf-bellmusicaltool"></i>
-				</Badge>
-				<Badge colors="primary" dataBadge={20} dataBadgePlacement="top">
-					<i className="uf uf-bellmusicaltool"></i>
-				</Badge>
+			<Badge dataBadge={4} dataBadgePlacement="bottom">
+				<Icon type="uf-bell"></Icon>
+			</Badge>
+			<Badge dataBadge={4} colors="warning" dataBadgePlacement="up">
+				<Icon type="uf-bell"></Icon>
+			</Badge>
 			</div>
 		)
 	}

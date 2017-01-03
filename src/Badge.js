@@ -53,7 +53,10 @@ class Badge extends React.Component {
 		let classNames = classnames(clsPrefix,clsObj);
 
 		return(
-			<span className={classNames} {...others}>{children}<span className="data-icon">{dataBadge}</span></span>
+			<span className={classNames} {...others}>
+				{dataBadge && (<span>{children}<span className="data-icon">{dataBadge}</span></span>)}
+				{!dataBadge && (<span className="badge-single">{children}</span>)}
+			</span>
 		);
 	}
 }
