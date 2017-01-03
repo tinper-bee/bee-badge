@@ -86,11 +86,20 @@ var Badge = function (_React$Component) {
 		return _react2["default"].createElement(
 			'span',
 			_extends({ className: classNames }, others),
-			children,
-			_react2["default"].createElement(
+			dataBadge && _react2["default"].createElement(
 				'span',
-				{ className: 'data-icon' },
-				dataBadge
+				null,
+				children,
+				_react2["default"].createElement(
+					'span',
+					{ className: 'data-icon' },
+					dataBadge
+				)
+			),
+			!dataBadge && _react2["default"].createElement(
+				'span',
+				{ className: 'badge-single' },
+				children
 			)
 		);
 	};
