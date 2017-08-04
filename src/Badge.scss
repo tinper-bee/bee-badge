@@ -34,13 +34,12 @@
     left: 22px;
     font-family: "Microsoft YaHei", "Helvetica", "Arial", sans-serif;
     font-size: $badge-font-dataicon-size;
-    min-width: 16px;
-    height: auto;
+    width: 16px;
+    height: 16px;
     text-align: center;
     border-radius: 50%;
     color: $badge-default-dataicon-fontcolor;
     box-sizing: border-box;
-    width: auto;
     font-weight: 200;
     border: 1px solid $badge-default-dataicon-bordercolor;
     background: $badge-default-dataicon-bgcolor;
