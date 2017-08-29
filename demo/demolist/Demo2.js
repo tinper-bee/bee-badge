@@ -2,7 +2,12 @@
  * @title 图标Badge
  * @description 在子元素里自定义内容
  */
-class Demo2 extends Component {
+
+import React, { Component } from 'react';
+import Icon from 'bee-icon';
+import Badge from '../../src';
+
+export default class Demo2 extends Component {
 	render(){
 		return (
 			<div>

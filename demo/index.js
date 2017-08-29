@@ -13,34 +13,7 @@ const CARET = <i className="uf uf-arrow-down"></i>;
 const CARETUP = <i className="uf uf-arrow-up"></i>;
 
 
-/**
- * @title 基本样式Badge
- * @description `colors`控制背景颜色种类。
- */
-class Demo1 extends Component {
-	render () {
-		return (
-			<Badge colors="primary" >8</Badge>
-		)
-	}
-}/**
- * @title 图标Badge
- * @description 在子元素里自定义内容
- */
-class Demo2 extends Component {
-	render(){
-		return (
-			<div>
-			<Badge dataBadge={4} dataBadgePlacement="bottom">
-				<Icon type="uf-bell"></Icon>
-			</Badge>
-			<Badge dataBadge={4} colors="warning" dataBadgePlacement="up">
-				<Icon type="uf-bell"></Icon>
-			</Badge>
-			</div>
-		)
-	}
-}var DemoArray = [{"example":<Demo1 />,"title":" 基本样式Badge","code":"/**\n * @title 基本样式Badge\n * @description `colors`控制背景颜色种类。\n */\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<Badge colors=\"primary\" >8</Badge>\n\t\t)\n\t}\n}","desc":" `colors`控制背景颜色种类。"},{"example":<Demo2 />,"title":" 图标Badge","code":"/**\n * @title 图标Badge\n * @description 在子元素里自定义内容\n */\nclass Demo2 extends Component {\n\trender(){\n\t\treturn (\n\t\t\t<div>\n\t\t\t<Badge dataBadge={4} dataBadgePlacement=\"bottom\">\n\t\t\t\t<Icon type=\"uf-bell\"></Icon>\n\t\t\t</Badge>\n\t\t\t<Badge dataBadge={4} colors=\"warning\" dataBadgePlacement=\"up\">\n\t\t\t\t<Icon type=\"uf-bell\"></Icon>\n\t\t\t</Badge>\n\t\t\t</div>\n\t\t)\n\t}\n}","desc":" 在子元素里自定义内容"}]
+var Demo1 = require("./demolist/Demo1");var Demo2 = require("./demolist/Demo2");var DemoArray = [{"example":<Demo1 />,"title":" 基本样式Badge","code":"/**\n * @title 基本样式Badge\n * @description `colors`控制背景颜色种类。\n */\n\nimport React, { Component } from 'react';\nimport Badge from 'tinper-bee';\n\n\n\trender () {\n\t\treturn (\n\t\t\t<Badge colors=\"primary\" >8</Badge>\n\t\t)\n\t}\n}","desc":" `colors`控制背景颜色种类。"},{"example":<Demo2 />,"title":" 图标Badge","code":"/**\n * @title 图标Badge\n * @description 在子元素里自定义内容\n */\n\nimport React, { Component } from 'react';\nimport Icon from 'bee-icon';\nimport Badge from 'tinper-bee';\n\n\n\trender(){\n\t\treturn (\n\t\t\t<div>\n\t\t\t<Badge dataBadge={4} dataBadgePlacement=\"bottom\">\n\t\t\t\t<Icon type=\"uf-bell\"></Icon>\n\t\t\t</Badge>\n\t\t\t<Badge dataBadge={4} colors=\"warning\" dataBadgePlacement=\"up\">\n\t\t\t\t<Icon type=\"uf-bell\"></Icon>\n\t\t\t</Badge>\n\t\t\t</div>\n\t\t)\n\t}\n}","desc":" 在子元素里自定义内容"}]
 
 
 class Demo extends Component {
