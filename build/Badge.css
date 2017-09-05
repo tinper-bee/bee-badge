@@ -40,20 +40,17 @@
   box-sizing: border-box;
   font-weight: 200;
   border: 1px solid #ccc;
-  background: #fff; }
+  background: #fff;
+  line-height: 16px; }
 
 .u-badge .badge-single {
-  min-width: 16px;
   display: inline-block;
   background: red;
   text-align: center;
   border-radius: 50%;
-  min-height: 16px;
   font-size: 10px;
-  padding-left: 4px;
-  padding-right: 4px;
-  width: auto;
-  height: auto; }
+  width: 16px;
+  height: 16px; }
 
 .u-badge-primary.u-badge .data-icon, .u-badge-primary.u-badge .badge-single {
   border: none;
