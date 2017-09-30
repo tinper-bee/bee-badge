@@ -14,6 +14,10 @@ var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
@@ -34,12 +38,12 @@ var propTypes = {
 	/**
   * @title 颜色
   */
-	colors: _react.PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', 'default']),
+	colors: _propTypes2["default"].oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', 'default']),
 	/**
   * @title 边角显示内容
   */
-	dataBadge: _react.PropTypes.oneOfType([_react.PropTypes.node, _react.PropTypes.string, _react.PropTypes.object]),
-	dataBadgePlacement: _react.PropTypes.oneOf(['topbottom'])
+	dataBadge: _propTypes2["default"].oneOfType([_propTypes2["default"].node, _propTypes2["default"].string, _propTypes2["default"].object]),
+	dataBadgePlacement: _propTypes2["default"].oneOf(['topbottom'])
 };
 
 var defaultProps = {
