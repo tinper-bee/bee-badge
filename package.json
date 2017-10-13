@@ -34,7 +34,6 @@
  },
  "dependencies": {
   "bee-button": "^0.2.2",
-  "bee-icon": "latest",
   "classnames": "^2.2.5",
   "babel-runtime": "^6.23.0",
   "tinper-bee-core": "latest"
@@ -52,6 +51,7 @@
   "es5-shim": "~4.1.10",
   "bee-panel": "latest",
   "bee-layout": "latest",
-  "bee-button": "latest"
+  "bee-button": "latest",
+  "bee-icon": "latest"
  }
 }
