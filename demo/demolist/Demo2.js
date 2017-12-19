@@ -7,7 +7,7 @@ import React, { Component } from 'react';
 import Icon from 'bee-icon';
 import Badge from '../../src';
 
-export default class Demo2 extends Component {
+class Demo2 extends Component {
 	render(){
 		return (
 			<div>
@@ -21,3 +21,5 @@ export default class Demo2 extends Component {
 		)
 	}
 }
+
+export default Demo2;
