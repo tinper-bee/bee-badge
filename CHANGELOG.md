@@ -1,5 +1,10 @@
-<a name="1.0.3"></a>
-## 1.0.3 (2018-01-21)
+<a name="1.1.3"></a>
+## 1.1.3 (2019-02-25)
+
+
+### Bug Fixes
+
+* 修改示例 ([b29ee91](https://github.com/tinper-bee/bee-badge/commit/b29ee91))
 
 
 ### build
