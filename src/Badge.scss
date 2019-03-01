@@ -1,6 +1,7 @@
 @import "../node_modules/tinper-bee-core/scss/minxin-variables.scss";
 @import "../node_modules/tinper-bee-core/scss/minxin-mixins";
 
+$badge-default-dataicon-bordercolor: $border-color-base;
 .u-badge {
     position : relative;
     white-space: nowrap;
